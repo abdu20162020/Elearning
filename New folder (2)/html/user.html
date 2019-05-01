@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script type="text/javascript" src="vali.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="user.js"></script>
+<link rel="stylesheet" href="test.css">    
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script>
+    function myFunction(){
+       // window.location.href = "index.html";
+     $.getJSON("http://localhost:8080/category", function(data) {       
+             for ( var i in data) {
+                
+                            var x= "<div class=\"col-4-lg ml-3 user\">"+"<div class=\"card\" style=\"width:13rem;margin-top: 27px;\">"+
+                            " <img src=\"quiz.jpg\" alt=\"one\" class=\"card-img-top\">"+
+                            "<div class=\"card-body\">"+
+                            " <h5 class=\"card-title"+i+"\">"+data[i]+"</h5>"+
+                            " <p class=\"card-text\">hello jdfdjkdfjksks dfdhfdhfsdhg ndfnvncdffffff ffffffff fcsweweeeeee </p>"+
+                            "<button id=\"getQuizes\" class=\"btn btn-primary\" value="+data[i]+">see more...</button>"+
+                            "</div>"+
+                            "</div>"+
+                            "</div>"
+                            $(".row").append(x);
+								}    
+                               }); 
+    
+    
+    
+        }
+    </script>
+<title>user</title>
+</head>
+<body style="background-color:#94C0E9;margin-top:37px" onload="myFunction()"  >
+    <nav class="navbar navbar-light bg-light" style="margin-top: -37px;margin-left: 2px;">
+  <a class="navbar-brand" href="user.html">
+    <img src="quizNa.png" width="30" height="30" class="d-inline-block align-top" alt="">
+   QUIZ COMONNET
+  </a>
+</nav>
+    <div class="container quizlist" >
+        <div class="row">
+
+        
+
+
+
+        </div>
+
+
+    </div>         
+
+    
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+sw2project\Controller\LogsController.class
+sw2project\Controller\GradeController.class
+sw2project\Controller\Entities\Quiz.class
+sw2project\Controller\Entities\HistoryLogs.class
+sw2project\Controller\Entities\Grade_user.class
+sw2project\Controller\Entities\Repository\QuistionEntitiesRepository.class
+sw2project\Controller\Entities\quistion.class
+sw2project\Controller\Entities\Repository\QuizEntitiesRepository.class
+sw2project\Controller\Entities\Repository\LogsEntitiesRepository.class
+sw2project\Application.class
+sw2project\Controller\Entities\Repository\GradeEntitiesRepository.class
+sw2project\Controller\QuizController.class
