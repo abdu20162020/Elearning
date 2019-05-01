@@ -1,2 +1,2 @@
-# Elearning
-# THis is quiz component 
+# E-learning
+# This is quiz component 
